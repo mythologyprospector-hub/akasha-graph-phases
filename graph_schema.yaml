@@ -23,7 +23,7 @@ edges:
 
   transitions_to:
     from: phase
-    to: phase
+    to: transition
 
   constrained_by:
     from: phase
@@ -31,12 +31,20 @@ edges:
 
   stabilizes:
     from: constraint
-    to: phase
+    to: equilibrium
 
   destabilizes:
     from: constraint
-    to: phase
+    to: instability
 
   emerges_from:
-    from: phase
+    from: transition
     to: phase
+
+  settles_into:
+    from: equilibrium
+    to: phase
+
+  tends_toward:
+    from: phase
+    to: attractor
