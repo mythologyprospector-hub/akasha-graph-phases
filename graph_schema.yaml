@@ -45,9 +45,13 @@ edges:
     from: equilibrium
     to: phase
 
-#  triggers:
-#    from: instability
-#    to: transition
+  triggers:
+    from: instability
+    to: transition
+
+  recovers_to:
+    from: instability
+    to: equilibrium
 
   tends_toward:
     from: phase
