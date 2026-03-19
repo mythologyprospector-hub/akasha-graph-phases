@@ -112,3 +112,7 @@ Instead it asks:
 "Do different domains share deeper structural patterns?"
 
 Phase systems provide one possible lens through which such patterns may be explored.
+
+---
+
+This repository participates in the Akasha ecosystem and is described by repo-manifest.yaml.
