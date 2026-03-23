@@ -1,5 +1,5 @@
 repo: akasha-graph-phases
-role: schema
+role: graph
 layer: structural
 description: 'Defines the core graph schema for phase-based system modeling used by
   Akasha Discovery.
