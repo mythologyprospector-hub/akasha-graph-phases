@@ -1,41 +1,46 @@
-repo: akasha-graph-phases
-role: graph
-layer: structural
-description: 'Defines the core graph schema for phase-based system modeling used by
-  Akasha Discovery.
-
-  '
-interfaces:
-- akasha-discovery
-- akasha-world
-status:
-  maturity: experimental
-  confidence: low
-  active: true
-name: akasha-graph-phases
-type: module
-domain: systems
-depends_on:
-  - akasha-ontology
+repo:
+  name: akasha-graph-phases
+  ecosystem: akasha
+  version: 0.1.0
+  status: active
 
 engine:
   family: relationship
   class: graph_engine
-  role: unknown
+  role: phase_and_relation_modeling
 
 identity:
   role: engine
-  layer: unknown
+  layer: structure
   description: >
-    Canonical Akasha repo placeholder. Replace with repo-specific description.
+    Graph phase engine for the Akasha constellation.
+    Responsible for modeling graph states, transitions, phases,
+    and relation structures across connected entities and domains.
 
 ownership:
   steward: human
   approval_required: true
 
-capabilities: []
+interfaces:
+  consumes:
+    - ontology_models
+    - linked_entities
+    - transition_records
+  produces:
+    - graph_phase_models
+    - transition_maps
+    - relation_structures
+
+capabilities:
+  - graph_phase_modeling
+  - transition_mapping
+  - relation_structure_generation
+  - connected_state_analysis
 
 alignment:
   axioms_required: true
   canonical_structure: true
   interpretation_free_core: true
+
+depends_on:
+  - akasha-ontology
