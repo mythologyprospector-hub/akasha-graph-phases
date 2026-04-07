@@ -44,3 +44,11 @@ alignment:
 
 depends_on:
   - akasha-ontology
+
+# ---- Canonical sections added by akasha-canon ----
+type: organ
+
+family: discovery
+
+role: graph-phases
+
